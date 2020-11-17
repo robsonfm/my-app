@@ -10,7 +10,7 @@ const App = () => {
     axios.get(`https://react-challenge-api.herokuapp.com/first-challenge/episodes`)
       .then(res => {
         const retornoLista = res.data;
-        setListaReact(retornoLista);
+        setListaReact(retornoLista);                                                                                                              
       })
 
   }, []);
@@ -19,6 +19,5 @@ const App = () => {
     <div> oi </div>
   )
 }
-
 
 export default App;

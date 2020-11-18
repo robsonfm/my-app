@@ -16,7 +16,7 @@ const App = () => {
   }, []);
   console.log(listaReact);
   return (
-    <div> oi </div>
+    <div> React Daily Chat </div>
   )
 }
 

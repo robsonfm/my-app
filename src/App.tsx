@@ -22,7 +22,7 @@ const App = () => {
 
   useEffect(() => {
     axios.get(`https://react-challenge-api.herokuapp.com/first-challenge/episodes`)
-      .then((res: any) => {
+      .then((res:any) => {
         const retornoLista = res.data;
         setListaReact(retornoLista);
       })
@@ -58,6 +58,7 @@ const App = () => {
       </div>
     </Container>
   )
+  
 }
 
 export default App;

@@ -8,14 +8,8 @@ const App = () => {
 
  /* const boxStyle = {margin: '20px', border: 'solid-2px-darkgray', padding: '20px', border-color: 'black'};
   const h1Style = {textTransform: 'uppercase', fontSize: '30px'};*/
-  const projetoAcontecer = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-   Cras sagittis, enim ac iaculis iaculis, nunc tellus fringilla enim, at feugiat eros nulla in est.
-    Nullam ac leo enim. Cras maximus massa imperdiet, lacinia elit nec, vestibulum tellus.
-     Nullam euismod diam mi, et porttitor sem eleifend sit amet. Nulla eget ultrices nisl.
-      Aliquam ornare ornare enim, condimentum feugiat massa maximus in.
-       Duis eleifend eget magna vitae tincidunt. Nam lobortis placerat mauris ac fermentum.
-        Nam eu ornare purus, non auctor urna. Phasellus nec blandit lacus, sed consectetur ex.
-         Quisque convallis felis mi, quis cursus odio lobortis sed.`;
+  const projetoAcontecer = `Sendo encabeçado por Silvério, não temos um moderador, mas qualquer um é livre para discordar e expor sua opinião e 
+  é justamente isso que tem contribuído para o crescimento do projeto. Qualquer um pode tocar a discussão e até fazer uma apresentação (hands-on).`;
 
   useEffect(() => {
     axios.get(`https://react-challenge-api.herokuapp.com/first-challenge/episodes`)
@@ -30,8 +24,12 @@ const App = () => {
     <div style={{backgroundColor: 'white'}}>
       <h1>React Daily Chat</h1>
       <p>Sobre:
-      Porque nós o usamos?
-      É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).
+      Inciado como um projeto pelo seus idealizadores, Júli Sena e Silverio Vale no final do mês de Outubro de 2020.
+      A intenção era de ser como um chat de troca de informações sobre assuntos abordados dentro do mundo React, como: melhores práticas, ferramentas, etc.
+      Logo no seu segundo encontro já não funcionou mais como um simles chat, pois a proporção que tomou foi muito grande, se comparada a um chat, pois a reunião teve em torno de 20 pessoas presentes.
+      Desde então os debates estão sendo gravados e estão disponíveis na lista abaixo.
+      É um tempo de mutuo crescimento e amadurecimento na área não só  do React, mas em geral, se tratando de tecnologia e metodologias ágéis.
+
         </p>
       <h2>Assuntos do debate</h2>
       <h3>Já debatidos</h3>

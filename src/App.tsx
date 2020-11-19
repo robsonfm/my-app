@@ -8,8 +8,8 @@ const App = () => {
 
  /* const boxStyle = {margin: '20px', border: 'solid-2px-darkgray', padding: '20px', border-color: 'black'};
   const h1Style = {textTransform: 'uppercase', fontSize: '30px'};*/
-  const projetoAcontecer = `Sendo encabeçado por Silvério, não temos um moderador, mas qualquer um é livre para discordar e expor sua opinião e 
-  é justamente isso que tem contribuído para o crescimento do projeto. Qualquer um pode tocar a discussão e até fazer uma apresentação (hands-on).`;
+  const projetoAcontecer = `O projeto é moderado pelo Silvério e Júlio Sena, porém qualquer um é livre para discordar e expor sua opinião. Qualque um que pode dar inicio a discussão e se for de interesse fazer até mesmo um hands-on ou uma aprensentação.
+  As gravações tem sido iniciadas pelo Robson Melo e salvas no (dtiflix - Colocar o link aqui).`;
 
   useEffect(() => {
     axios.get(`https://react-challenge-api.herokuapp.com/first-challenge/episodes`)

@@ -23,12 +23,10 @@ const App = () => {
   <div style={{backgroundColor: '#282c34'}}>
     <div style={{backgroundColor: 'white'}}>
       <h1>React Daily Chat</h1>
-      <p>Sobre:
-      Inciado como um projeto pelo seus idealizadores, Júli Sena e Silverio Vale no final do mês de Outubro de 2020.
-      A intenção era de ser como um chat de troca de informações sobre assuntos abordados dentro do mundo React, como: melhores práticas, ferramentas, etc.
-      Logo no seu segundo encontro já não funcionou mais como um simles chat, pois a proporção que tomou foi muito grande, se comparada a um chat, pois a reunião teve em torno de 20 pessoas presentes.
+      <p>Inciado como um projeto pelo seus idealizadores, Júli Sena e Silverio Vale no final do mês de Outubro de 2020, a intenção era de ser um chat de troca de informações sobre assuntos abordados dentro do mundo React, como: melhores práticas, ferramentas, etc.
+      Logo no seu segundo encontro já não funcionou mais como um simles chat, pois a proporção que tomou foi muito grande, se comparada a um chat, pois a reunião teve em torno de 14 pessoas presentes e a média hoje já está em 20 pessoas.
       Desde então os debates estão sendo gravados e estão disponíveis na lista abaixo.
-      É um tempo de mutuo crescimento e amadurecimento na área não só  do React, mas em geral, se tratando de tecnologia e metodologias ágéis.
+      É um tempo de crescimento mutuo e amadurecimento na área não só do React, mas em geral, podemos ver o agilismo e o designon think (double diamond) sendo praticados com muita clareza.
 
         </p>
       <h2>Assuntos do debate</h2>

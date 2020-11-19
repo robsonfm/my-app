@@ -1,4 +1,4 @@
-import  styled from 'styled-components'
+import styled from 'styled-components'
 //import ​​ from 'styled-components/cssprop'
 
 export const Container = styled.div`
@@ -19,3 +19,16 @@ export const Tabela = styled.ul`
     text-decoration: underline;
     color: #61dafb;
 `;
+
+export const Divisor = styled.hr`
+    margin: 20px 0;
+`;
+
+export const Box = styled.div`
+    border: double 5px;
+    padding: 16px;
+    margin: 16px 0;
+`;
+
+
+

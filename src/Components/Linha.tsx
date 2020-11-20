@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import { LinhaClicavel, Gravacao } from '../styles'
 
 interface Props {
     id: number,
@@ -29,11 +29,11 @@ const Linha = ({
     const [collapse, setCollapse] = useState(true);
     const [textoDescricao, setTextoDescricao] = useState("");
     const [link, setLink] = useState("");
-    const abrirDescricao = () => {
 
+    const abrirDescricao = () => {
         setCollapse(!collapse);
-        axios.get(`https://react-challenge-api.herokuapp.com/first-challenge/episodes/${id}`).
-            then((res: any) => {
+        axios.get(`https://react-challenge-api.herokuapp.com/first-challenge/episodes/${id}`)
+            .then((res: any) => {
                 const texto = res.data.fullDescriptionHtml;
                 setTextoDescricao(texto);
                 setLink(links[id]);
@@ -41,17 +41,20 @@ const Linha = ({
     }
 
     return (
-        <li key={id} onClick={abrirDescricao}>
-            {data} - {descricao}
+        <li style={{ marginBottom: "20px" }} key={id} >
+            <LinhaClicavel onClick={abrirDescricao}>
+                {data} - {descricao}
+            </LinhaClicavel>
             {!collapse && (
-                <div>
+                <div style={{ margin: "16px 0" }}>
                     <div dangerouslySetInnerHTML={{ __html: textoDescricao }} />
-                    <div>
-                        <a href={link}>Gravação</a>
-                    </div>
+                    {link &&
+                        <Gravacao>
+                            <a href={link}>Gravação</a>
+                        </Gravacao>
+                    }
                 </div>
-            )
-            }
+            )}
         </li>
     )
 }

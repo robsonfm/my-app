@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-//import ​​ from 'styled-components/cssprop'
 
 export const Container = styled.div`
     background-color: #282c34;
@@ -15,11 +14,6 @@ export const Subtitulo = styled(Titulo)`
     font-size: 22px;
 `;
 
-export const Tabela = styled.ul`
-    text-decoration: underline;
-    color: #61dafb;
-`;
-
 export const Divisor = styled.hr`
     margin: 20px 0;
 `;
@@ -31,4 +25,15 @@ export const Box = styled.div`
 `;
 
 
+export const LinhaClicavel = styled.div`
+    cursor: pointer;
+    text-decoration: underline;
+    color: #61dafb;
+`
+export const Gravacao = styled.div`
+    margin: 12px 0;
+    text-transform: uppercase;
+    color:  #61dafb !important;
+    >a{color:  #61dafb};
+`
 

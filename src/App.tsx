@@ -6,7 +6,6 @@ import {
   Container,
   Titulo,
   Subtitulo,
-  Tabela,
   Box,
   Divisor
 } from './styles';
@@ -57,11 +56,11 @@ const App = () => {
 
         <Titulo>ASSUNTOS DO DEBATE</Titulo>
         <Subtitulo>Já debatidos</Subtitulo>
-        <Tabela> {listaReact &&
+        <ul> {listaReact &&
           listaReact.map(((item: InformacoesVideos, index: number) => (
             <Linha id={item.id} descricao={item.descricao} data={item.data}></Linha>
           )))}
-        </Tabela>
+        </ul>
 
         <Divisor></Divisor>
 

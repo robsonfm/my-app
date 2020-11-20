@@ -80,8 +80,6 @@ const App = () => {
         <span>{projetoAcontecer}</span>
       </div>
     </Container>
-  )
-
-}
+  )}
 
 export default App;

@@ -14,19 +14,24 @@ const Linha = ({
     descricao,
 }: Props) => {
 
-    const [textoDescricao, setTextoDescricao] = useState();
+    const [collapse, setCollapse] = useState(true);
+    const [textoDescricao, setTextoDescricao] = useState("");
     const abrirDescricao = () => {
+
+        setCollapse(!collapse);
         axios.get(`https://react-challenge-api.herokuapp.com/first-challenge/episodes/${id}`).
             then((res: any) => {
                 const texto = res.data.fullDescriptionHtml;
-                //console.log(texto);
                 setTextoDescricao(texto);
             })
     }
 
     return (
         <li key={id} onClick={abrirDescricao}>
-            {data} - {descricao} {textoDescricao}
+            {data} - {descricao}
+            {collapse &&
+                <div dangerouslySetInnerHTML={{ __html: textoDescricao }} />
+            }
         </li>
     )
 }

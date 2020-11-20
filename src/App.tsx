@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Linha from './Components/Linha';
 import './App.css';
 import {
   Container,
@@ -41,7 +42,9 @@ const App = () => {
         setListaReact(retornoLista);
       })
   }, []);
+
   console.log(listaReact);
+
   return (
     <Container>
       <div>
@@ -56,7 +59,7 @@ const App = () => {
         <Subtitulo>Já debatidos</Subtitulo>
         <Tabela> {listaReact &&
           listaReact.map(((item: InformacoesVideos, index: number) => (
-            <li key={item.id}>{item.data} - {item.descricao}</li>
+            <Linha id={item.id} descricao={item.descricao} data={item.data}></Linha>
           )))}
         </Tabela>
 
